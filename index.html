@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width">
+  <link rel="stylesheet" href="./style.css" />
+  <script type="text/javascript" src='./index.js'></script>
+  <title>Test</title>
+  <style>
+    p {
+  margin: 0;
+}
+
+.red {
+  color: #c15557;
+}
+
+.green {
+  color: #53a76e;
+}
+
+.blue-text {
+  color: #128cc4;
+}
+
+.today-change-text {
+  color: #8c8c8c;
+}
+
+.flex-container {
+  display: flex;
+  flex-direction: column;
+  border: 5px solid #128cc4;
+}
+
+.table-flex-conatiner {
+  display: flex;
+  flex-direction: column;
+}
+
+.thead-flex-conatainer {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  border-bottom: 1px solid #dddddd;
+}
+
+.thead-td {
+  width: 50%;
+}
+
+.left-thead-td {
+  background: #f7f7f7;
+  color: #636363;
+  padding-left: 10px;
+  display: flex;
+  align-items: flex-end;
+}
+
+.right-thead-td {
+  background: #efefef;
+  text-align: end;
+  padding-right: 10px;
+  padding-top: 5px;
+  padding-bottom: 5px;
+}
+
+.tbody-flex-container {
+  display: flex;
+  flex-direction: column;
+}
+
+.tbody-tr {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  margin-left: 10px;
+  border-bottom: 1px solid #dddddd;
+}
+
+.tbody-tr-td {
+  width: 50%;
+}
+
+.left-tbody-tr-td {
+  color: #128cc4;
+  display: flex;
+  align-items: center;
+}
+
+.right-tbody-tr-td {
+  text-align: end;
+  padding-right: 10px;
+  padding-top: 5px;
+  padding-bottom: 5px;
+}
+
+.load-more-btn {
+  align-self: center;
+  margin-top: 10px;
+  margin-bottom: 10px;
+  color: #128cc4;
+}
+
+  </style>
+</head>
+
+<body>
+  <div class='flex-container'>
+    <div class='table-flex-conatiner'>
+      <div class='thead-flex-conatainer'>
+        <div class='thead-td left-thead-td'>Account</div>
+        <div class='thead-td right-thead-td'>
+          <p>
+            <span class='blue-text'>^</span>
+            <span>Available Cash</span>
+          </p>
+          <p class='today-change-text'>Today's Change</p>
+        </div>
+      </div>
+      <div class='tbody-flex-container'>
+        <div class='tbody-tr'>
+          <div class='tbody-tr-td left-tbody-tr-td'>IRA-5200</div>
+          <div class='tbody-tr-td right-tbody-tr-td'>
+            <p>$5,763</p>
+            <p class='red'>
+              -0.08% / $8916.69
+            </p>
+          </div>
+        </div>
+
+        <div class='tbody-tr'>
+          <div class='tbody-tr-td left-tbody-tr-td'>
+            AAA-1812
+          </div>
+          <div class='tbody-tr-td right-tbody-tr-td'>
+            <p>$2,010,926.10</p>
+            <p class='green'>+0.21% / $38,881.63</p>
+          </div>
+        </div>
+        <div class='tbody-tr'>
+          <div class='tbody-tr-td left-tbody-tr-td'>
+            AAA-3810
+          </div>
+          <div class='tbody-tr-td right-tbody-tr-td'>
+            <p>$9,452</p>
+            <p class='green'>+0.07% / $8,916.69</p>
+          </div>
+        </div>
+      </div>
+    </div>
+    <span class='load-more-btn'>Load More</span>
+  </div>
+  </div>
+</body>
+
+</html>
